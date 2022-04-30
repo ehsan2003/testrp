@@ -193,10 +193,11 @@ function put() {
 }
 
 function doSingle() {
+    window.dfff=diff
     const diffKeys = Object.keys(diff);
     if (diffKeys.length > 0) {
         const willSetPixel =
-            diff[diffKeys[Math.floor(Math.random() * diffKeys.length)]];
+            diff[diffKeys[Math.floor(Math.random() * diffKeys.length)-1]];
 
         const randomized = {
             x: getXyFromIndex(willSetPixel).x,
