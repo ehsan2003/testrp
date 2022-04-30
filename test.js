@@ -31,7 +31,6 @@ function seti(i, b) {
         b != getDestBoardFromRealIndex(i)
     ) {
         diff[i] = i;
-        debugger;
     } else {
         delete diff[i];
     }
